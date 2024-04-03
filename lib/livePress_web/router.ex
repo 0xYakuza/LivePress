@@ -19,6 +19,7 @@ defmodule LivePressWeb.Router do
 
     get "/", PageController, :home
     get "/panel", PanelController, :panel
+    resources "/panel/plugins", PluginsController
   end
 
   # Other scopes may use custom stacks.
